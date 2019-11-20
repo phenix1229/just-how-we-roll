@@ -101,6 +101,7 @@ function rollTwenty(){
 
 d6pic.addEventListener('click', rollSix);
 dd6pic1.addEventListener('click', rollDoubleSix);
+dd6pic2.addEventListener('click', rollDoubleSix);
 d12pic.addEventListener('click', rollTwelve);
 d20pic.addEventListener('click', rollTwenty);
 reset.addEventListener('click', initialState);
