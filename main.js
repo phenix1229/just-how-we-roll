@@ -93,25 +93,6 @@ function rollTwenty(){
     d20mode.innerText = getMode(twentyCounts);
 }
 
-function initialState(){
-    d6pic.src = './images/start/d6.png';
-    dd6pic1.src = './images/start/d6.png';
-    dd6pic2.src = './images/start/d6.png';
-    d12pic.src = './images/start/d12.jpeg';
-    d20pic.src = './images/start/d20.jpg';
-    d6mean.innerText = '';
-    d6median.innerText = '';
-    d6mode.innerText = '';
-    dd6mean.innerText = '';
-    dd6median.innerText = '';
-    dd6mode.innerText = '';
-    d12mean.innerText = '';
-    d12median.innerText = '';
-    d12mode.innerText = '';
-    d20mean.innerText = '';
-    d20median.innerText = '';
-    d20mode.innerText = '';
-}
 
 /*******************
  * EVENT LISTENERS *
@@ -123,6 +104,8 @@ dd6pic1.addEventListener('click', rollDoubleSix);
 d12pic.addEventListener('click', rollTwelve);
 d20pic.addEventListener('click', rollTwenty);
 reset.addEventListener('click', initialState)
+window.addEventListener('load', initialState);
+
 
 /****************
  * MATH SECTION *
@@ -153,6 +136,28 @@ function getMode(arr){
     return (arr.indexOf(Math.max(...arr)) + 1);
 }
 
+
 /*********
  * RESET *
  *********/
+
+
+function initialState(){
+    d6pic.src = './images/start/d6.png';
+    dd6pic1.src = './images/start/d6.png';
+    dd6pic2.src = './images/start/d6.png';
+    d12pic.src = './images/start/d12.jpeg';
+    d20pic.src = './images/start/d20.jpg';
+    d6mean.innerText = '';
+    d6median.innerText = '';
+    d6mode.innerText = '';
+    dd6mean.innerText = '';
+    dd6median.innerText = '';
+    dd6mode.innerText = '';
+    d12mean.innerText = '';
+    d12median.innerText = '';
+    d12mode.innerText = '';
+    d20mean.innerText = '';
+    d20median.innerText = '';
+    d20mode.innerText = '';
+}
