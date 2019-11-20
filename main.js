@@ -103,7 +103,7 @@ d6pic.addEventListener('click', rollSix);
 dd6pic1.addEventListener('click', rollDoubleSix);
 d12pic.addEventListener('click', rollTwelve);
 d20pic.addEventListener('click', rollTwenty);
-reset.addEventListener('click', initialState)
+reset.addEventListener('click', initialState);
 window.addEventListener('load', initialState);
 
 
