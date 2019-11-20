@@ -126,7 +126,7 @@ function getMedian(arr){
     if (arr.length % 2 === 0){
         median = getMean(middle);
     } else if (arr.length % 2 === 1){
-        median = arr[(arr.length - 1) / 2]
+        median = arr[(arr.length - 1) / 2];
     }
 
     return median.toFixed(2);
